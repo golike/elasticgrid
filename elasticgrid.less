@@ -2,8 +2,25 @@
     display: table;
     width: 100%;
 
+    &.table-layout-fixed,
+    &.layout-fixed,
+    &.fixed {
+        table-layout: fixed;
+    }
+
     > .col {
         display: table-cell;
+
+        .vertical-align-middle,
+        .valign-middle { vertical-align: middle; }
+
+        .vertical-align-top,
+        .valign-top { vertical-align: top !important; }
+
+        .text-align-center,
+        .text-center { text-align: center; }
+
+        .no-wrap { white-space: nowrap; }
     }
 }
 
@@ -282,9 +299,3 @@
 .width-980px { width: 990px; min-width: 980px; }
 .width-990px { width: 990px; min-width: 990px; }
 .width-1000px { width: 1000px; min-width: 1000px; }
-
-.vertical-align-middle { vertical-align: middle; }
-.vertical-align-top { vertical-align: top !important; }
-.text-align-center { text-align: center; }
-
-.no-wrap { white-space: nowrap; }
