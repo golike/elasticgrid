@@ -6,7 +6,9 @@ We stopped using tables for page layout because they aren't semantically correct
 ## Usage
 An elasticgrid uses two main elements: rows and columns.
 
-    <div class="row">
-        <div class="col">column 1</div>
-        <div class="col">column 2</div>
-    </div>
+```html
+<div class="row">
+    <div class="col">column 1</div>
+    <div class="col">column 2</div>
+</div>
+```
